@@ -27,7 +27,7 @@ const { Search } = Input;
 
   const getDataFromApi=async(value)=>{
 
-   const response =  await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${value}&units=metric&APPID=9af5d30b2b7b270e2b3f209cb0c315fb`).then(resp=>resp.json()).then(data=>data)
+   const response =  await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${value}&units=metric&APPID=YOUR_API_KEY`).then(resp=>resp.json()).then(data=>data)
 
     setPlaceData(response);
 
